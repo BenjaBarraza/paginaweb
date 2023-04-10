@@ -1,0 +1,72 @@
+
+.body-colorfondo{
+    background-color:aquamarine
+}
+
+.layout-micentrado {
+    margin: auto;
+    width: 50%;
+  }
+
+  body{
+    background-image: url(../img/fondologo/fondo.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .contenedor{
+    display: flex;
+    justify-content: right;
+
+  }
+
+  .imagen{
+    width: 1000px;
+    height: 750;
+  }
+
+  .imagenmecanico{
+    width: 100px;
+  }
+
+  .texto{
+    margin-left: 25px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .img{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+  }
+
+
+  .txtcolor{
+    color:#fff;
+    font-family:serif;
+  }
+
+  .titulo{
+    color: black;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+  }
+
+  .layout{
+    font-family: Verdana, arial, Helvetica, sans-serif;
+    color: black;
+    width: 1000px;
+  }
+
+  .boton{
+    background-color: blue;
+    width: 1000px;
+  }
