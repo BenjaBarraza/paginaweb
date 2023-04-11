@@ -19,7 +19,6 @@
   .contenedor{
     display: flex;
     justify-content: right;
-
   }
 
   .imagen{
@@ -32,8 +31,9 @@
   }
 
   .texto{
+    color: white;
     margin-left: 25px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Verdana,Arial, Helvetica, sans-serif;
   }
 
   .img{
@@ -57,8 +57,8 @@
   }
 
   .titulo{
-    color: black;
-    font-family:Verdana, Arial, Helvetica, sans-serif;
+    color: white;
+    font-family:verdana,Arial, Helvetica, sans-serif;
   }
 
   .layout{
@@ -71,4 +71,18 @@
   .boton{
     background-color: blue;
     width: 1000px;
+  }
+
+  .register{
+    color: rgb(0, 0, 0);
+  }
+
+  .footer{
+    font-family: verdana,Arial, Helvetica, sans-serif;
+  }
+
+  .formlogin{
+    margin: auto;
+    width: 50%;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
   }

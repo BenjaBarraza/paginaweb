@@ -19,7 +19,9 @@
       <a class="navbar-brand" href="#">
         <img src="/img/fondologo/logo2.png" alt="Logo" width="100" height="100" class="d-inline-block align-text-top">
       </a>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+      <!--MENU-->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary titulo">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -63,9 +65,8 @@
               <li>
             </ul>
             <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-              
+              <input class="form-control me-2" type="search" placeholder="..." aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
             </form>
           </div>
         </div>
@@ -78,27 +79,51 @@
   <!--FORMS-->
   <div class="container mb-5">
     <div class="row align-item">
-      <form class="col-5 layout-micentrado shadow p-5">
+      <form class="col-5 formlogin shadow p-5">
         <div class="mb-3">
-          <h4 class="fs-7" style="color: white;" for="exampleInputEmail1" class="form-label">Correo electronico</h4>
+          <h4 for="exampleInputEmail1" class="form-label fw-bolder fs-3">Correo electronico</h4>
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
           <div id="emailHelp" class="form-text"></div>
         </div>
         <div class="mb-3">
-          <h4 class="fs-7" style="color: white;" for="exampleInputPassword1" class="form-label">Contraseña</h4>
+          <h4 for="exampleInputPassword1" class="form-label fw-bolder fs-3">Contraseña</h4>
           <input type="password" class="form-control" id="exampleInputPassword1">
         </div>
         <div class="mb-3 form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <h4 class="fs-7" style="color: white;" class="form-check-label" for="exampleCheck1">Recuerdame</h4>
+          <h4 class="form-check-label fw-bolder fs-3" for="exampleCheck1">Recuerdame</h4>
         </div>
-        <a class="btn btn-primary" href="index.html" role="button">Iniciar Sesión</a>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          Iniciar Sesión   
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title text-center fw-bolder fs-4" id="staticBackdropLabel">Iniciando Sesión</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-center fw-bolder fs-3">
+               Logeado Exitosamente 
+              </div>
+              <div class="modal-footer">
+                <a class="btn btn-primary" href="index.html" role="button">Continue...</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </form>
     </div>
   </div>
 
+
   <!--FOOTER CON BOOTSTRAP-->
-  <div class="container-fluid ">
+  <div class="container-fluid footer">
     <div class="row p-5 bg-dark text-white">
       <div class="col-xs-12 col-md-6 col-lg-3">
         <p class="h3">Taller Rayo MCqueen</p>
@@ -145,38 +170,6 @@
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
