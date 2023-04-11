@@ -6,6 +6,7 @@
 .layout-micentrado {
     margin: auto;
     width: 50%;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
   }
 
   body{
@@ -64,6 +65,7 @@
     font-family: Verdana, arial, Helvetica, sans-serif;
     color: black;
     width: 1000px;
+    margin: auto;
   }
 
   .boton{
