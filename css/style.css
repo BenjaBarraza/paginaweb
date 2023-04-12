@@ -34,12 +34,16 @@
   }
 
   .imagenmecanico{
-    width: 100px;
+    width: 1000px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
   }
 
   .texto{
-    color: black;
-    margin-left: 25px;
+    color: #fff;
+    margin: 100px;
     font-family: Verdana,Arial, Helvetica, sans-serif;
   }
 
