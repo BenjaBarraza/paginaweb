@@ -42,7 +42,8 @@
   }
 
   .texto{
-    color: #fff;
+    border: 1px solid black;
+    color: orange;
     margin: 100px;
     font-family: Verdana,Arial, Helvetica, sans-serif;
   }
