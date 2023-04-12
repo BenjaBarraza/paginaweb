@@ -1,7 +1,3 @@
-*{
-  box-sizing: border-box;
-}
-
 
 .body-colorfondo{
     background-color:aquamarine
@@ -95,6 +91,7 @@
 
   .footer{
     font-family: verdana,Arial, Helvetica, sans-serif;
+    margin-bottom: none;
 
   }
 
