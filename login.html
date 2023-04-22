@@ -15,7 +15,10 @@
 
   <style>
     body {
-      background-image: url(/img/fondologo/fondotaller.jpg);
+      background-color: #000000;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23220000' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23440000' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23660000' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23880000' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23A00' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+      background-attachment: fixed;
+      background-size: cover;
     }
   </style>
 
@@ -83,97 +86,137 @@
   <br>
 
   <!--FORMS-->
-  <div class="container mb-5">
-    <div class="row align-item">
-      <form class="col-5 formlogin shadow p-5">
-        <div class="mb-3">
-          <h4 for="exampleInputEmail1" class="form-label fw-bolder fs-3">Correo electronico</h4>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text"></div>
-        </div>
-        <div class="mb-3">
-          <h4 for="exampleInputPassword1" class="form-label fw-bolder fs-3">Contraseña</h4>
-          <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <h4 class="form-check-label fw-bolder fs-3" for="exampleCheck1">Recuerdame</h4>
-        </div>
-
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-          Iniciar Sesión
-        </button>
-
-        <!-- Modal -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-          aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title text-center fw-bolder fs-4" id="staticBackdropLabel">Iniciando Sesión</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body text-center fw-bolder fs-3">
-                Logeado Exitosamente
-              </div>
-              <div class="modal-footer">
-                <a class="btn btn-primary" href="atenciones.html" role="button">Continue...</a>
+  <!--Login-->
+  <div class="section">
+    <div class="container">
+      <div class="row full-height justify-content-center">
+        <div class="col-12 text-center align-self-center py-5">
+          <div class="section pb-5 pt-5 pt-sm-2 text-center">
+            <h6 class="mb-0 pb-3"><span>Log In </span><span>Sign Up</span></h6>
+            <input class="checkbox" type="checkbox" id="reg-log" name="reg-log" />
+            <label for="reg-log"></label>
+            <div class="card-3d-wrap mx-auto">
+              <div class="card-3d-wrapper">
+                <div class="card-front">
+                  <div class="center-wrap">
+                    <div class="section text-center">
+                      <h4 class="mb-4 pb-3">Log In</h4>
+                      <div class="form-group">
+                        <input type="email" class="form-style" placeholder="Correo Electronico">
+                        <i class="input-icon uil uil-at"></i>
+                      </div>
+                      <div class="form-group mt-2">
+                        <input type="password" class="form-style" placeholder="Contraseña">
+                        <i class="input-icon uil uil-lock-alt"></i>
+                      </div>
+                      <a href="#" class="btn mt-4">Conectarse</a>
+                      <p class="mb-0 mt-4 text-center"><a href="#" class="link">Olvido su 
+                          contraseña?</a></p>
+                    </div>
+                  </div>
+                </div>
+                <!--Registro-->
+                <div class="card-back">
+                  <div class="center-wrap">
+                    <div class="section text-center">
+                      <h4 class="mb-3 pb-3">Sign Up</h4>
+                      <div class="form-group">
+                        <input type="text" class="form-style" placeholder="Nombre Completo">
+                        <i class="input-icon uil uil-user"></i>
+                      </div>
+                      <div class="form-group mt-2">
+                        <input type="tel" class="form-style" placeholder="Nro Telefono">
+                        <i class="input-icon uil uil-phone"></i>
+                      </div>
+                      <div class="form-group mt-2">
+                        <input type="email" class="form-style" placeholder="Correo Electronico">
+                        <i class="input-icon uil uil-at"></i>
+                      </div>
+                      <div class="form-group mt-2">
+                        <input type="password" class="form-style" placeholder="Contraseña">
+                        <i class="input-icon uil uil-lock-alt"></i>
+                      </div>
+                      <a href="#" class="btn mt-4">Registrarse</a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </form>
+      </div>
     </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title text-center fw-bolder fs-4" id="staticBackdropLabel">Iniciando Sesión</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center fw-bolder fs-3">
+          Logeado Exitosamente
+        </div>
+        <div class="modal-footer">
+          <a class="btn btn-primary" href="atenciones.html" role="button">Continue...</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </form>
+  </div>
   </div>
 
 
   <!--FOOTER CON BOOTSTRAP-->
 
-    <div class="container-fluid titulo">
-      <div class="row p-5 bg-dark text-white">
-        <div class="col-xs-12 col-md-6 col-lg-3">
-          <p class="h3">Taller Rayo MCqueen</p>
-          <img src="/img/fondologo/logo2.png" alt="Logo" width="200" height="200" class="d-inline-block align-text-top">
+  <div class="container-fluid titulo">
+    <div class="row p-5 bg-dark text-white">
+      <div class="col-xs-12 col-md-6 col-lg-3">
+        <p class="h3">Taller Rayo MCqueen</p>
+        <img src="/img/fondologo/logo2.png" alt="Logo" width="200" height="200" class="d-inline-block align-text-top">
+      </div>
+      <div class="col-xs-12 col-md-6 col-lg-3">
+        <p class="h5 mb-3 mb-3">Social</p>
+        <div class="mb-2">
+          <a class="nav-link" href="https://www.facebook.com/profile.php?id=100091678300845">Facebook</a>
         </div>
-        <div class="col-xs-12 col-md-6 col-lg-3">
-          <p class="h5 mb-3 mb-3">Social</p>
-          <div class="mb-2">
-            <a class="nav-link" href="https://www.facebook.com/profile.php?id=100091678300845">Facebook</a>
-          </div>
-          <div class="mb-2">
-            <a class="nav-link" href="https://www.instagram.com/tallerrayomcqeen">Instagram</a>
-          </div>
-          <div class="mb-2">
-            <a class="nav-link" href="https://twitter.com/?lang=es">Twitter</a>
-          </div>
+        <div class="mb-2">
+          <a class="nav-link" href="https://www.instagram.com/tallerrayomcqeen">Instagram</a>
         </div>
-        <div class="col-xs-12 col-md-6 col-lg-3">
-          <p class="h5 mb-3">Documentos</p>
-          <div class="mb-2">
-            <a class="nav-link" href="terminosycondiciones.html">Terminos y condiciónes</a>
-          </div>
-          <div class="mb-2">
-            <a class="nav-link" href="politicadeprivacidad.html">Políticas de privacidad</a>
-          </div>
-          <div class="mb-2">
-            <a class="nav-link" href="#">Garantia</a>
-          </div>
-        </div>
-        <div class="col-xs-12 col-md-6 col-lg-3">
-          <p class="h5 mb-3">Contactanos</p>
-          <div class="mb-2">
-            <a class="nav-link" href="#">fono: +56925468532</a>
-          </div>
-          <div class="mb-2">
-            <a class="nav-link" href="#">TallerMCqueen@Mecanicos.cl</a>
-          </div>
-        </div>
-        <div class="col-xs-12-pt-4">
-          <p class="text-white text-center">Copyright - All rights reseverd 2023</p>
+        <div class="mb-2">
+          <a class="nav-link" href="https://twitter.com/?lang=es">Twitter</a>
         </div>
       </div>
+      <div class="col-xs-12 col-md-6 col-lg-3">
+        <p class="h5 mb-3">Documentos</p>
+        <div class="mb-2">
+          <a class="nav-link" href="terminosycondiciones.html">Terminos y condiciónes</a>
+        </div>
+        <div class="mb-2">
+          <a class="nav-link" href="politicadeprivacidad.html">Políticas de privacidad</a>
+        </div>
+        <div class="mb-2">
+          <a class="nav-link" href="#">Garantia</a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6 col-lg-3">
+        <p class="h5 mb-3">Contactanos</p>
+        <div class="mb-2">
+          <a class="nav-link" href="#">fono: +56925468532</a>
+        </div>
+        <div class="mb-2">
+          <a class="nav-link" href="#">TallerMCqueen@Mecanicos.cl</a>
+        </div>
+      </div>
+      <div class="col-xs-12-pt-4">
+        <p class="text-white text-center">Copyright - All rights reseverd 2023</p>
+      </div>
     </div>
+  </div>
 
 
 
@@ -187,12 +230,12 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
-      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
-      crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
