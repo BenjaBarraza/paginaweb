@@ -1,22 +1,6 @@
-
-.body-colorfondo{
-    background-color:aquamarine
-}
-
-.layout-micentrado {
-    margin: auto;
-    width: 50%;
-    font-family: Verdana, Arial, Helvetica, sans-serif;
-  }
-
   body{
     padding: 0;
     margin: 0;
-    background-color: grey;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    
   }
     
   .contenedor{
@@ -27,32 +11,6 @@
     text-align: center;
   }
 
-  .imagen{
-    width: 1000px;
-    height: 750;
-    margin: auto;
-  }
-
-  .imagenmecanico{
-    width: 1000px;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-  }
-
-  .texto{
-    border: 1px solid black;
-    color: orange;
-    margin: 100px;
-    font-family: Verdana,Arial, Helvetica, sans-serif;
-  }
-
-  .img{
-    position: relative;
-    display: inline-block;
-    text-align: center;
-  }
 
   .centrado{
     position: absolute;
@@ -63,41 +21,6 @@
     font-family: Verdana, Arial, Helvetica, sans-serif;
   }
 
-  .txtcolor{
-    color:#fff;
-    font-family:serif;
-  }
-
-  .titulo{
-    color: white;
-    font-family:verdana,Arial, Helvetica, sans-serif;
-    bottom: 0;
-  }
-
-  .layout{
-    font-family: Verdana, arial, Helvetica, sans-serif;
-    color: black;
-    width: 1000px;
-    margin: auto;
-  }
-
-  .boton{
-    background-color: blue;
-    width: 1000px;
-  }
-
-  .register{
-    color: #fff;
-  }
-
-  .register2{
-    color: black;
-  }
-
-  .footer{
-    font-family: verdana,Arial, Helvetica, sans-serif;
-    margin-bottom: none;
-  }
 
 
 
