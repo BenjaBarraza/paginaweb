@@ -1,0 +1,1 @@
+const nombrecompleto = document.getElementById=("name")
